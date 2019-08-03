@@ -22,6 +22,7 @@ public class Practice extends HttpServlet {
         resp.getWriter().print("<head>");
         resp.getWriter().print("<body>");
         resp.getWriter().print("<h1>Hello, Servlet!</h1>");
+        resp.getWriter().print("<h1>Hello, " + getServletContext().getAttribute("subject")+ "!</h1>");
         resp.getWriter().print("</body>");
         resp.getWriter().print("</head>");
         resp.getWriter().print("</html>");
